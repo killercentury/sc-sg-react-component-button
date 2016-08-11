@@ -1,3 +1,3 @@
-# Sc Sg React Component Button Component
+# SG React Button Component
 
-Sc Sg React Component Button Component
+SG React Button Component
