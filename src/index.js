@@ -1,27 +1,17 @@
 import React from 'react';
 
-const buttonStyles = {
-  border: '1px solid #eee',
-  borderRadius: 3,
-  backgroundColor: '#FFFFFF',
-  cursor: 'pointer',
-  fontSize: 15,
-  padding: '3px 10px',
-};
+class Button extends React.Component {
 
-const Button = ({ children, onClick, style = {} }) => (
-  <button
-    style={{ ...buttonStyles, ...style }}
-    onClick={onClick}
-  >
-    {children}
-  </button>
-);
+  constructor(props) {
+    super(props);
+  }
 
-Button.propTypes = {
-  children: React.PropTypes.string.isRequired,
-  onClick: React.PropTypes.func,
-  style: React.PropTypes.object,
-};
+  render() {
+    return (
+      <a href="#" className="sg-Btn sg-Btn--secondary sg-Btn--large">Search</a>
+    );
+  }
+
+}
 
 export default Button;
